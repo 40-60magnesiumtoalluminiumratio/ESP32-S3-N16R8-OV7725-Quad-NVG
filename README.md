@@ -103,6 +103,8 @@ Ensure your Arduino IDE settings match the target specs below before compiling a
 *   Flash Size: "16MB (128Mb)"
 *   Partition Scheme: "16M Flash (3MB APP/9.9MB FATFS)"
 *   PSRAM: "OPI PSRAM"
+*   Flash Mode: QIO 120 MHz
+*   CPU Frequency: 240 MHz
 
 ---
 
