@@ -44,7 +44,7 @@ This project enables cost-effective, IR-illuminated night vision tailored for ai
 *   Sensor: OV7725 22-pin ribbon connector camera module with its internal IR-cut filter physically removed.
 *   Peripherals: 
     *   20k Ohm Potentiometer (for on-the-fly exposure and gain control)
-    *   Tactile Push-Button (for toggling setting menus)
+    *   Push-Button (for toggling setting menus)
 
 ### 2. Slave Node Components (Per Node)
 *   Microcontroller: ESP32-S3 N16R8
