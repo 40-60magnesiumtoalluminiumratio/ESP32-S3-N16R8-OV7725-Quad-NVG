@@ -40,7 +40,7 @@ This project enables cost-effective, IR-illuminated night vision tailored for ai
 
 ### 1. Master Node Components
 *   Microcontroller: ESP32-S3 N16R8 (A developer board with an integrated camera slot is highly recommended. 8MB Flash variants are compatible if they feature OPI PSRAM).
-*   Display: 1.54" ST7789 SPI TFT display (Alternative displays like the round GC9A01 work out of the box. Screens exceeding 240x240 will require alternative frame sizes assigned in code).
+*   Display: 1.54" ST7789 SPI TFT display (Alternative displays like the round GC9A01 work. Screens exceeding 240x240 will require alternative frame sizes assigned in code).
 *   Sensor: OV7725 22-pin ribbon connector camera module with its internal IR-cut filter physically removed.
 *   Peripherals: 
     *   20k Ohm Potentiometer (for on-the-fly exposure and gain control)
