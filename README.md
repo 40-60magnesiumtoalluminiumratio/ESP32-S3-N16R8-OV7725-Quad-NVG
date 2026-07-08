@@ -1,4 +1,4 @@
-# ESP32-S3-N16R8-OV7725-Quad-NVG
+# ESP32-S3-N16R8-OV7725-Quad+-NVG
 Affordable and simple ESP32-S3 Night Vision solution using ESP32-S3 N16R8 with an OV7725 camera and ST7789 1.54" TFT SPI display powered by TFT_eSPI library         
 
 This project is an attempt at *IR-illuminated/Lowlight* night vision suitable for airsoft/educational/home surveillance usage that allows users to easily combine 2 or more nodes into an array for increased viewing angle and other usages. It is also possible to use a single node as a monocular.
