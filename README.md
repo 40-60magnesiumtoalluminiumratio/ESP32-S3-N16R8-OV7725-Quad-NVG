@@ -26,7 +26,7 @@ This project is an attempt at *IR-illuminated/Lowlight* night vision suitable fo
                               ││          ││  ││          ││  ││          ││
                               │└──────────┘│  │└──────────┘│  │└──────────┘│
                               └────────────┘  └────────────┘  └────────────┘
-# MASTER NODE
+## MASTER NODE
 **To assemble a single master node you will need:**
 - ESP32-S3 N16R8 *(camera slot highly suggested)*                 *(8Mb flash boards also may work, provided they have OPI PSRAM)*
   
@@ -50,11 +50,28 @@ BL        45    (backlight. Some displays do not have this pin, in that case set
 ```
 **Controls + UART:**
 ```
-Pot output      1 (pot must be powered from onboard 5v)
-Button          2 (button must short pin 2 to ground when pressed)
+Pot output      1        (pot must be powered from onboard 5v)
+Button          2        (button must short pin 2 to ground when pressed)
 TX              Slave RX (connect all of the slaves to the master RX pin)
-
 ```
+## SLAVE NODE
+**To assemble a single slave node you will need:**
+- ESP32-S3 N16R8 *(camera slot highly suggested)*                 
+  
+- 1.54" ST7789 SPI TFT display                                    
+  
+- OV7725 22 pin ribbon connector camera with IR filter removed    
+
+```Pinout is unchanged. Connect the Master TX pin to the Slave RX pin```
+
+## Software
+```
+The Master Node must be flashed with MasterNode.ino
+All Slave Nodes must be flashed with SlaveNode.ino
+```
+**To flash both the Master and the Slave nodes, the following parameters are recommended:**
+<img width="424" height="523" alt="image" src="https://github.com/user-attachments/assets/62074bf9-c889-44c7-b9c3-42254162743c" />
+
 
 
 
