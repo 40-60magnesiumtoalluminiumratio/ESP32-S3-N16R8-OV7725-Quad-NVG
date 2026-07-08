@@ -1,7 +1,7 @@
 # ESP32-S3-N16R8-OV7725-Quad-NVG
-### Affordable and simple ESP32-S3 Night Vision solution using ESP32-S3 N16R8 with an OV7725 camera and ST7789 1.54" TFT SPI display powered by TFT_eSPI library         
+Affordable and simple ESP32-S3 Night Vision solution using ESP32-S3 N16R8 with an OV7725 camera and ST7789 1.54" TFT SPI display powered by TFT_eSPI library         
 
-This project is an attempt at IR-illuminated/Lowlight night vision suitable for airsoft/educational/home surveillance usage that allows users to easily combine 2 or more nodes into an array for increased viewing angle and other usages. It is also possible to use a single node as a monocular.
+This project is an attempt at *IR-illuminated/Lowlight* night vision suitable for airsoft/educational/home surveillance usage that allows users to easily combine 2 or more nodes into an array for increased viewing angle and other usages. It is also possible to use a single node as a monocular.
 
      Master  Node     UART                                                  
     ┌────────────┐ ─────────────────┬───────────────┬───────────────┐       
@@ -26,21 +26,35 @@ This project is an attempt at IR-illuminated/Lowlight night vision suitable for 
                               ││          ││  ││          ││  ││          ││
                               │└──────────┘│  │└──────────┘│  │└──────────┘│
                               └────────────┘  └────────────┘  └────────────┘
-
-To assemble a single master node you will need:
-- ESP32-S3 N16R8 (camera slot highly suggested)                   *(8Mb flash boards also may work, provided they have OPI PSRAM)* 
+# MASTER NODE
+**To assemble a single master node you will need:**
+- ESP32-S3 N16R8 *(camera slot highly suggested)*                 *(8Mb flash boards also may work, provided they have OPI PSRAM)*
+  
 - 1.54" ST7789 SPI TFT display                                    *(other displays such as the GC9A01 will work. However displays with resolution above 240x240 will need to use a different framesize)*
+  
 - OV7725 22 pin ribbon connector camera with IR filter removed    *(24pin OV7725's will require pin remapping may need additional workarounds. OV2460 works fine but you won't be able to achieve the same results as with the OV7725)*
-- 220k *(or similar resistance)* Ohm potentiometer
+  
+- 20k *(or similar resistance)* Ohm potentiometer
 - Button
 
-Display pinout: (changing pins may create conflicts with the camera pins, check before remapping)
-MOSI 19    *sda*
-SCLK 20    *scl (often labeled as clk)**
-CS   21   
-DC   47   
-RST  48   
-BL   45    *backlight. Some displays do not have this pin, in that case set pin to -1*
+**Display pinout:** 
+```
+MOSI      19    (sda)
+SCLK      20    (scl/often labeled as clk)
+CS        21   
+DC        47   
+RST       48   
+BL        45    (backlight. Some displays do not have this pin, in that case set pin to -1)
+
+(changing the pinout may create conflicts with the camera pins, check before remapping)
+```
+**Controls + UART:**
+```
+Pot output      1 (pot must be powered from onboard 5v)
+Button          2 (button must short pin 2 to ground when pressed)
+TX              Slave RX (connect all of the slaves to the master RX pin)
+
+```
 
 
 
