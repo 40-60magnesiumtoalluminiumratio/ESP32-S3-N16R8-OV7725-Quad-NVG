@@ -75,7 +75,7 @@ Warning: Modifying the display pin configurations blindly can create critical ha
 | Peripheral | Source Pin | Target / Destination |
 | :--- | :--- | :--- |
 | Potentiometer Output | Wiper Pin | GPIO 1 (Must be supplied from onboard 5V rail) |
-| Tactile Button | Standard Pin | GPIO 2 (Configured as Pull-Up; must short directly to GND) |
+| Button | Standard Pin | GPIO 2 (Configured as Pull-Up; must short directly to GND) |
 | UART Broadcast | GPIO 21 (TX) on Master | Connect to the RX pins of all configured Slave nodes |
 
 ---
