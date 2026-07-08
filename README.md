@@ -41,7 +41,6 @@ CS   21
 DC   47   
 RST  48   
 BL   45    *backlight. Some displays do not have this pin, in that case set pin to -1*
-d
 
 
 
