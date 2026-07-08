@@ -98,11 +98,11 @@ Most newer ESP32 Arduino Core board packages do not natively support the OV7725.
 ### 2. IDE Compilation Parameters
 Ensure your Arduino IDE settings match the target specs below before compiling and flashing your respective Master.ino and Slave.ino files to the boards:
 
-*   Board: "ESP32S3 Dev Module"
-*   USB CDC On Boot: "Enabled"
-*   Flash Size: "16MB (128Mb)"
-*   Partition Scheme: "16M Flash (3MB APP/9.9MB FATFS)"
-*   PSRAM: "OPI PSRAM"
+*   Board: ESP32S3 Dev Module
+*   USB CDC On Boot: "Enabled
+*   Flash Size: 16MB (128Mb)
+*   Partition Scheme: 16M Flash (3MB APP/9.9MB FATFS)
+*   PSRAM: OPI PSRAM (QSPI can work if your board supports it)
 *   Flash Mode: QIO 120 MHz
 *   CPU Frequency: 240 MHz
 
