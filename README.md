@@ -1,4 +1,4 @@
-# ESP32-S3-N16R8-OV7725-Quad+-NVG
+# ESP32-S3-Quad+-NVG
 
 An affordable, modular, and simple **ESP32-S3 Low-Light/Night Vision** solution utilizing an **OV7725** camera module and an **ST7789 1.54" TFT SPI** display driven by the `TFT_eSPI` library.
 
